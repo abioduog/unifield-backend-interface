@@ -1,0 +1,52 @@
+{
+  "name": "unifield-backend-interface",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "clean": "rm -rf .next",
+    "dev:admin": "APP_TYPE=admin next dev -p 3001",
+    "dev:retailer": "APP_TYPE=retailer next dev -p 3002",
+    "build:admin": "APP_TYPE=admin next build",
+    "build:retailer": "APP_TYPE=retailer next build",
+    "start:admin": "APP_TYPE=admin next start -p 3001",
+    "start:retailer": "APP_TYPE=retailer next start -p 3002"
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.1",
+    "@radix-ui/react-dropdown-menu": "^2.1.1",
+    "@radix-ui/react-label": "^2.1.0",
+    "@radix-ui/react-select": "^2.1.1",
+    "@radix-ui/react-slider": "^1.2.0",
+    "@radix-ui/react-slot": "^1.1.0",
+    "@radix-ui/react-switch": "^1.1.0",
+    "@radix-ui/react-tabs": "^1.1.0",
+    "@supabase/supabase-js": "^2.45.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^16.4.5",
+    "lucide-react": "^0.427.0",
+    "next": "^14.2.7",
+    "next-auth": "^4.24.7",
+    "react": "^18.3.1",
+    "react-datepicker": "^7.3.0",
+    "react-dom": "^18.3.1",
+    "react-query": "^3.39.3",
+    "recharts": "^2.12.7",
+    "tailwind-merge": "^2.5.2",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@next/bundle-analyzer": "^14.2.6",
+    "@types/react": "18.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.10"
+  }
+}
